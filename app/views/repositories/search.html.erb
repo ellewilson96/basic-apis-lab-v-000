@@ -10,7 +10,7 @@
     <p><%= @error %></p>
   <% elsif @repositories %>
     <ul>
-    <% @repositories.each do |venue| %>
+    <% @repositories.each do |repository| %>
       <li>
         <%= repository["name"] %><br>
         <%= repository["link"] %><br>
