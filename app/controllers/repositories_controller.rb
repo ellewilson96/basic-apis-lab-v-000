@@ -13,7 +13,8 @@ class RepositoriesController < ApplicationController
         req.params['sort'] = params[:stars]
         req.params['order'] = 'asc'
       end
-      body = JSON.parse(@resp.body)
+      
+      body = JSON.parse(@resp)
       if @resp.success?
         @repositories = body["response"]["repositories"]
       else
