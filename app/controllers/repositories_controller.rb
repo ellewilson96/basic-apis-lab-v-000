@@ -14,7 +14,7 @@ class RepositoriesController < ApplicationController
         req.params['order'] = 'asc'
       end
 
-      body = JSON.parse(@resp)
+      body = JSON.parse(@resp.body)
       if @resp.success?
         @repositories = body["response"]["repositories"]
       else
