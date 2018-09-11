@@ -1,4 +1,4 @@
-class RepositoriesController::Faraday < ApplicationController
+class RepositoriesController < ApplicationController
 
   def search
 
