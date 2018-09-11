@@ -13,8 +13,8 @@
     <% @repositories.each do |venue| %>
       <li>
         <%= repository["name"] %><br>
-        <%= repository["location"]["address"] %><br>
-        Checkins: <%= repository["stats"]["checkinsCount"] %>
+        <%= repository["link"] %><br>
+        <%= repository["description"] %>
       </li>
     <% end %>
     </ul>
